@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pfinance</title>
+    <link rel="shortcut icon" href="logo65.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/input.css">
+    <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/table.css">
+    <link rel="stylesheet" href="css/Pfinance.css">
+    <link rel="stylesheet" href="css/editbar.css">
+
+    <script src="js/button.js"></script>
+    <script src="js/localhostsave.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/summery.js"></script>
+    <script src="js/editfile.js"></script>
+    <script src="js/movedeletbar.js"></script>
+</head>
+<body>
+
+     <div class="bgOfHome" id="bgOfHome">  <!-- start of home section-->
+
+
+        <div class="areaOfTable" id="areaOfTable">
+                             <div id="table"> 
+
+                             </div>
+                             <div class="beforetable">
+
+                             </div>
+
+        </div>
+
+
+         <div class="bgOfSearch">
+            <p class="divoamountD">Cost of </p> <p class="divoamountDName">today</p><p class="divoamountJAVAD" id="divoamountJAVAD">00</p>
+            <p class="divoamountM">Cost of </p> <p id="theMonth" class="divoamountMName">...</p> <p class="divoamountJAVAM" id="divoamountJAVAM">00</p>
+           
+            <div id="search1">
+                <input class="searchEngine" type="text" id="myInput" onkeyup="searchfncnData()" placeholder="     Type in a date" title="Type a date"> <div class="searcgImg" id="searcgImg" onclick="maxMinSearchBar()"> <img  src="search.png" alt="search" srcset=""></div>
+            </div>
+            <div id="search2">
+                <input class="searchEngine" type="text" id="myInputDetails" onkeyup="searchfncnDetails()" placeholder="     Type in a name" title="Type something"> <div class="searcgImg" id="searcgImg2" onclick="maxMinSearchBar2()"> <img  src="search.png" alt="search" srcset=""></div>
+            </div>
+            <div id="search3">
+                <input class="searchEngine" type="number" id="myInputAmount" onkeyup="searchfncnAmount()" placeholder="     Type in a number" title="Type a number"> <div class="searcgImg" id="searcgImg3" onclick="maxMinSearchBar3()"> <img  src="search.png" alt="search" srcset=""></div>
+            </div>
+
+            <div class="filter" id="filter" onclick="filter()"> <img src="layers.png" alt="" srcset="" > </div> 
+                   <div  id="finterBG" class="finterBGClass"> 
+                            <div class="bgOfFilter" onclick="bgOfFilter()"> </div>
+                            <div class="finterBG">
+                               
+                               <p class="searchby">Search by</p> <br> 
+                               <button class="searchbyElement1" onclick="dateFilter(), displayNoneFilter1()">Date</button> <br>
+                               <button class="searchbyElement2" onclick="detailsFilter(), displayNoneFilter2()">Details</button> <br>
+                               <button class="searchbyElement3" onclick="AmountFilter(), displayNoneFilter3()">Amount</button> <br>
+                            </div>
+                    </div>
+
+         </div>
+         </div>
+
+     </div> <!-- end of the home section --------------------------->
+
+
+
+
+     <div class="bgOfPfinance" id="bgOfPfinance"> <!-- Start of Pfiance ----->
+        <div class="notice">
+            The update will come soon
+
+        </div>
+        
+
+      <!-- Start of Pfiance ------------------------------------------------->
+     </div>
+
+
+
+
+
+
+
+
+    <div class="inputField" id="add">
+        <!-- start of add section------------------------------>
+        <p>Expense</p>
+        <textarea type="text" class="expense" id="expense" placeholder="Write details of the expense " required></textarea>
+        <img src="bird.gif" alt="Animation" srcset="" class="animationOfAdd">
+        <p class="amountTitle">Amount</p>
+        <input type="number" class="amount" placeholder="Amount" id="amount" required>
+        
+
+
+
+        <!-- submit button submit button submit button submit button submit button submit button submit button submit button submit button submit button submit button -->
+       <button class="submitBtn" onclick="playanimation(), runPlusBtnV(), Xvalue(), array2(), addrow()" id="submitBtn"> Add </button>
+
+
+         
+
+       <!-- end of add section -------------------------------->
+    </div>
+    <div class="bgBar"> 
+        <div class="nevigationBar"></div>
+        <img src="wide scenariowithbg.png" class="switchBar"></img>
+        <div class="switchBarFake">
+           <div class="addBtn" id="addBtn" onclick="showAdd(), addrow0()"> </div> 
+           <div class="homeBtn" id="homeBtn" onclick="showhome(), addrow1()"> </div> 
+           <div class="PfinanceBtn" id="PfinanceBtn" onclick="showPfinance(), addrow5()"> </div> 
+
+           <img class="plusImg" onclick="showAdd(), addrow3()" src="fi_plus-circle.png" alt="" srcset="">
+           <img class="PfinanceImg" onclick="showPfinance(), addrow5()" src="Pfinace.png" alt="" srcset="">
+           <img class="homeImg" onclick="showhome(), addrow4()" src="fi_home.png" alt="" srcset="">
+        </div>
+        <p class="downTextH" id="downTextH">Home</p>
+        <p class="downTextP" id="downTextP">....</p>
+        <p class="downTextA" id="downTextA">Add</p>
+    </div>
+
+
+    <div class="bgOfEditBar" id="bgOfEditBar" > <!-- edit bar--- movedeletebar.js and editfile.js -->
+        <div class="bgOfDeletBar" id="bgOfDeletBar">
+            
+            
+            
+            <DIv class="BGofMainEditBar">
+                
+               
+            </DIv>
+                
+            </DIv>
+
+            <div class="bgOfDeletBarFake">
+
+                <div class="placeHolderFirst"> 
+                    <div class="bgOfRangder" >
+                        <img src="delete.png" alt="" srcset="" class="deleteImgOfRange" id="deleteImgOfRange">
+                        <input type="range" id="deteleslide" value="0" min="0" max="10" class="pullee" placeholder="Slide to delete the entry" onclick="slideclick()" oninput="ggg()">
+                    </div>
+
+                        <div  class="placeholderOfUbdateBtn" id="div1" onclick=" editBtnOfEdit(), hideEditbar()">
+                    
+                            <img src="check.png" alt="" srcset="" onclick=" editBtnOfEdit(), hideEditbar()">
+        
+                         </div>  
+                    
+                </div>   
+                
+                
+
+                </div>
+
+
+            <div class="BGOfUpdateBar">
+                    
+                <p class="dateUpP">Date</p>
+                <input type="date" id="dateUpDate" class="dateUpDate">
+            
+            
+                <p class="DetailsUpP">Details</p>
+                <textarea class="DetailsUpDetails" type="text" name="" id="DetailsUpDetails"></textarea>
+
+            
+            
+                <p class="AmountUpP">Amount</p>
+                <input class="AmountUpAmount" type="number" name="" id="AmountUpAmount" required>
+
+            
+                
+        </div> 
+        
+
+        
+
+        
+    </div>
+    
+</body>
+<script>  
+// "<tr class='hidenTR'> <td  colspan='4'> 🙅nOnE🙅 </td>" 
+
+var result = "<table id='tablejava'>";
+    var   resultdate = "01/01/2022";
+    var   resultTitle ="This is how table looks like and you can note here";
+    var   resultAmount =" nOnE ";
+    var    resultOK = "<td> : <td>"; 
+  
+ // var firstTableData = tabbleData.toS
+        // var j = totalRow - 1; j >= 0; j--  ////// j = 0; j< totalRow; j++
+        for(j = 0; j< totalRow; j++){
+                result += "<tr class='trNormal' >" + "<td class='tdDate'>"+tabbleData[j].cellOfDate +"</td>" + "<td>"+tabbleData[j].cellOfTitle +"</td class='tdExpense'>" + "<td class='tdAmount'>"+tabbleData[j].cellOfAmount +"</td>" + "<td class='tdEditBtn'> <button class='tdEditBtn' id='"+j+"' onClick='GFG_click(this.id), showEditBar(), insValue()'> ✏️ </button></td>";
+            
+        };
+        var result = result + /* " </tr>" + "<tr class='trNormal'>" + "<td class='tdDate'>01/01/2022</td>" + "<td>This is how table looks like and you can note here </td class='tdExpense'>" + "<td class='tdAmount'>0000</td>" + "<td class='tdEditBtn' > ✏️ </td> */ "<tr class='hidenTR'> <td  colspan='4'> 🙅 No More 🙅 </td>"+ "</table>";
+
+function addrow() {
+
+    
+        //console.log(result);
+ document.getElementById("table").innerHTML= result; 
+    //
+}; 
+
+
+
+function addrow0(){
+    //console.log(result);
+ document.getElementById("table").innerHTML= result; 
+};
+
+function addrow1(){
+    //console.log(result);
+ document.getElementById("table").innerHTML= result; 
+};
+function addrow2(){
+    //console.log(result);
+ document.getElementById("table").innerHTML= result; 
+};
+function addrow3(){
+    //console.log(result);
+ document.getElementById("table").innerHTML= result; 
+};
+function addrow4(){
+    //console.log(result);
+ document.getElementById("table").innerHTML= result; 
+};
+function addrow5(){
+    //console.log(result);
+ document.getElementById("table").innerHTML= result; 
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// section of counting value of today and present month ////////////////////////
+document.getElementById("divoamountJAVAD").innerHTML = amountOfToday;
+document.getElementById("divoamountJAVAM").innerHTML = amountOfMonth; 
+document.getElementById("theMonth").innerHTML = " "+" "+theMonth;
+/*
+    var result = "<table border=1>";
+        resultdate = "";
+        resultTitle ="";
+        resultAmount ="";
+        resultOK = "<td> : <td>";
+   // for(var i=0; i<totalRow; i++) {
+    //    result += "<tr>";
+        var i = 0;
+        for(var j=0; j<totalRow; j++){
+            result += "<td>"+myArray[j].cellOfDate +"</td>" + 
+            "<td>"+myArray[j].cellOfTitle +"</td>" +
+            "<td>"+myArray[j].cellOfAmount +"</td>" +
+            "<td> : </td>";
+        }
+    //    result += "</tr>";
+   // }
+   // result += "</table>";
+
+  //  return result;
+ ///////////////////////////////////////////////
+
+    var result = "<table border=1>";
+    var   resultdate = "";
+    var   resultTitle ="";
+    var   resultAmount ="";
+    var    resultOK = "<td> : <td>"; 
+        for(var j=0; j<totalRow; j++){
+            result += "<tr>";
+
+            resultdate += "<td>"+tabbleData[j].cellOfDate +"</td>";
+            resultTitle += "<td>"+tabbleData[j].cellOfTitle +"</td>";
+            resultAmount += "<td>"+tabbleData[j].cellOfAmount +"</td>";
+            resultOK += "<td> : </td>";
+            
+        }
+        result += "</tr>";
+        result += "</table>";
+    
+ document.getElementById("table").innerHTML= result; 
+
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+     //   for (let i = 0; i < cars.length; i++) {
+ // text += cars[i] + "<br>";
+
+
+
+/*
+
+
+    //  var x = document.createElement("TBODY");
+  var y = document.createElement("TR");
+  var z1 = document.createElement("TD");
+  var z2 = document.createElement("TD");
+  var z3 = document.createElement("TD");
+  var z4 = document.createElement("TD");
+  z1.innerHTML = time;
+  y.appendChild(z1);
+
+  z2.innerHTML = PlustitleVVV;
+  y.appendChild(z2);
+
+  z3.innerHTML = PlusamountVVV;
+  y.appendChild(z3);
+  z4.innerHTML = "Ok";
+  y.appendChild(z4);
+
+  //x.appendChild(y);
+  document.getElementById("table").appendChild(y).rows;
+
+
+  z1.setAttribute('class', 'tdDate');
+  z2.setAttribute('class', 'tdExpense');
+  z3.setAttribute('class', 'tdAmount'); 
+  y.setAttribute('class', 'trNormal');
+  z4.setAttribute('class', 'tdEditBtn');
+
+
+
+
+        /*
+    var display = document.getElementById("table");
+    var newRaw = display.insertRaw( raw);
+    
+    var cell1 = newRaw.insertCell(0);
+    var cell2 = newRaw.insertCell(1);
+    var cell3 = newRaw.insertCell(2);
+    var cell4 = newRaw.insertCell(3);
+
+    cell1.innerHTML = PlustitleVVV;
+    cell2.innerHTML = PlusamountVVV;
+  */
+
+
+
+
+
+</script>
+</html>

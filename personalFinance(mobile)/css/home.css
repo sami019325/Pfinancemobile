@@ -1,0 +1,333 @@
+.bgOfHome{
+    position: absolute;
+    height: 800px;
+    width: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
+    display: none;
+
+}
+
+.bgOfSearch{
+    position: fixed;
+width: 100%;
+height: 111px;
+left: 0px;
+top: 0px;
+
+background: rgba(255, 125, 97, 0.53);
+backdrop-filter: blur(25px);
+/* Note: backdrop-filter has minimal browser support */
+
+
+}
+
+.searchEngine{
+    position: absolute;
+width: 12px;
+height: 47px;
+left: 9px;
+top: 32px;
+color: #FFF597;
+background: #FFF597;
+border-radius: 35px;
+padding-left: 20px;
+padding-right: 20px;
+
+font-size: 18px;
+font-weight: bold;
+animation: Mining 1s;
+  animation-fill-mode: forwards;
+
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+}
+@keyframes Mining{
+    from{
+        width: 275px;
+    }
+    to{
+        width: 12px;
+    }
+}
+
+
+.Max{
+    position: absolute;
+    
+    height: 47px;
+    left: 9px;
+    top: 32px;
+    color: #000000;
+    background: #FFF597;
+    border-radius: 35px;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+    font-size: 18px;
+    font-weight: bold;
+    animation: Maxing 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes Maxing{
+    from{
+        width: 12px;
+    }
+    to{
+        width: 275px;
+    }
+}
+
+.searcgImg{
+    position: absolute;
+    width: 40px;
+    height: 60px;
+    padding-left: 15px;
+    padding-top: 15px;
+    top: 30px;
+    left: 9px;
+    user-select: none;
+    animation: searchBarMining 1s;
+    animation-fill-mode: forwards;
+    
+}
+@keyframes searchBarMining{
+    from{
+        left: 276px;
+    }
+    to{
+        left: 9px;
+    }
+}
+.searcgImgChange{
+    position: absolute;
+    width: 35px;
+    height: 60px;
+    padding-left: 15px;
+    padding-top: 15px;
+    top: 30px;
+    left: 9px;
+    animation: searchBarSizing 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes searchBarSizing{
+    from{
+        left: 9px;
+    }
+    to{
+        left: 276px;
+    }
+}
+
+.filter{
+    position: absolute;
+width: 34px;
+height: 56px;
+right: 5px;
+top: 20px;
+padding-left: 9px;
+padding-top: 25px;
+background: rgba(255, 255, 255, 0.15);
+border-radius: 23px;
+}
+/*---------------------------------------------------------*/
+#search3{
+    display: none;
+    
+}
+#search2{
+    display: none;
+    
+}
+.divoamountD{
+    position:fixed;
+    top: 13px;
+    left: 60px;
+    border-radius: 35px;
+padding-left: 20px;
+padding-right: 20px;
+
+font-size: 18px;
+font-weight: bold;
+}
+.divoamountJAVAD{
+    position:fixed;
+    top: 13px;
+    left:230px;
+    border-radius: 35px;
+padding-left: 20px;
+padding-right: 20px;
+
+font-size: 18px;
+font-weight: bold;
+}
+
+.divoamountM{
+    position:fixed;
+    top: 38px;
+    left:60px;
+    border-radius: 35px;
+padding-left: 20px;
+padding-right: 20px;
+
+font-size: 20px;
+font-weight: bolder;
+}
+.divoamountJAVAM{
+    position:fixed;
+    top: 38px;
+    left:230px;
+    border-radius: 35px;
+padding-left: 20px;
+padding-right: 20px;
+
+font-size: 20px;
+font-weight: bolder;
+}
+
+.divoamountMName{
+    position:fixed;
+    top: 38px;
+    left: 135px;
+    border-radius: 35px;
+padding-left: 20px;
+padding-right: 20px;
+
+font-size: 20px;
+font-weight: bolder;
+}
+
+.divoamountDName{
+    position:fixed;
+    top: 9px;
+    left: 130px;
+    border-radius: 35px;
+padding-left: 20px;
+padding-right: 20px;
+
+font-size: 20px;
+font-weight: bolder;
+}
+
+.areaOfTable{
+    position: fixed;
+    top: 0;
+    padding-top: 120px;
+    width: 100%;
+    height: 77vh;
+    background-color: white;
+    overflow-y: auto;
+}
+
+
+
+
+
+
+
+
+/*------------------------------------ finter filter filter filter filter filter filter--------------*/
+
+.finterBGClass{
+    display: none;
+}
+
+.finterBG{
+    position: absolute;
+    width: 80%;
+    height: 350px;
+    left: 10%;
+    right: 10%;
+    top: 163px;
+    
+    background: #000000;
+    border-radius: 31px;
+}
+.bgOfFilter{
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.58);;
+    backdrop-filter: blur(100px);
+    backdrop-filter: opacity(20%);
+}
+
+.searchby{
+    position: relative;
+    width: 100%;
+    height: 20px;
+    
+left: 0px;
+top: 0px;
+text-align: center;
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 22px;
+color: #FFFFFF;
+}
+
+
+
+.searchbyElement1{
+    position: relative;
+    width: 100%;
+    height: 70px;
+    
+left: 0px;
+top: 0px;
+background-color: rgb(73, 8, 8);
+text-align: center;
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+color: #ececec;
+}
+.searchbyElement1:active{
+    background-color: #000000;
+    color: rgb(75, 75, 75);
+}
+.searchbyElement2{
+    position: relative;
+    width: 100%;
+    height: 70px;
+    
+left: 0px;
+top: 0px;
+background-color: rgb(73, 8, 8);
+text-align: center;
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+color: #ececec;
+}
+.searchbyElement2:active{
+    background-color: #000000;
+    color: rgb(75, 75, 75);
+}
+.searchbyElement3{
+    position: relative;
+    width: 100%;
+    height: 70px;
+    
+left: 0px;
+top: 0px;
+background-color: rgb(73, 8, 8);
+text-align: center;
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+color: #ececec;
+}
+.searchbyElement3:active{
+    background-color: #000000;
+    color: rgb(75, 75, 75);
+}

@@ -1,0 +1,92 @@
+
+.trNormal{
+    position:relative;
+right: 1px;
+left: 1px;
+background: #E8EDE2;
+
+}
+.tdDate{
+position: relative;
+padding-top: 0px;
+padding-bottom: 0px;
+padding-left: 5px;
+padding-right: 10px;
+font-family: Times New Roman;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 21px;
+color: #000000;
+}
+.tdExpense{
+    position: relative;
+    padding-left: 4px;
+    padding-right: 10px;
+    font-family: Times New Roman;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 21px;
+color: #0a7e48;
+}
+.tdAmount{
+    position: relative;
+    padding-left: 4px;
+    padding-right: 45px;
+font-family: Times New Roman;
+font-style: normal;
+font-weight: bold;
+font-size: 22px;
+line-height: 21px;
+/* identical to box height */
+
+
+color: #000000;
+}
+.tdEditBtn{
+    position: absolute;
+    width: 35px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    padding: auto;
+    text-align: center;
+    background: #d1f0d5;
+    border-radius: 7px 0px 0px 7px; 
+    border-color: #d1f0d5;
+    border-bottom: none;
+    border-right: none;
+
+    outline: 2px solid #fff;
+    box-shadow: 0px 0px 0px 0px;
+    cursor: pointer;
+	outline: inherit;
+    outline-offset: -4px;
+    font-size: 18px;
+    font-weight: bolder;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.tdEditBtn:active{
+    border-top: 1px ;
+    border-left: 1px ;
+    
+}
+
+.hidenTR{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-color: #d1f0d5;
+    user-select: none;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.beforetable{
+    width: 100%;
+    height: 20vh;
+    background-color: #d1f0d5;
+}
